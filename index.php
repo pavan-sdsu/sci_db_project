@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="./assets/css/index.css">
+	<link rel="icon" href="http://content.nike.com/content/dam/one-nike/globalAssets/social_media_images/nike_swoosh_logo_black.png" type="image/png">
 </head>
 
 <body>
@@ -16,7 +17,7 @@
 		<a class="navbar-brand d-flex align-items-center" href="#">
 			<img src="https://s3.nikecdn.com/unite/app/651/images/swoosh_black.png" class="d-inline-block align-top" alt="">
 		</a>
-		<a href="/login" id="login" class="text-dark"><span>Login</span><span class="fa fa-user ml-2"></span></a>
+		<a href="/login.php" id="login" class="text-dark"><span>Login</span><span class="fa fa-user ml-2"></span></a>
 	</nav>
 	<div>
 		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
