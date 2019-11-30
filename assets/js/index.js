@@ -53,7 +53,7 @@ const getProducts = () => $.ajax({
 		let html = "";
 		
 		prods.forEach(p => {
-			html += '<div class="col-lg-4 px-2 mt-3"><div class="card h-100"><img src="' + p.img + '"><i class="fa fa-edit border" class="btn btn-primary" onclick="openModal(' + p.id + ')"></i><div class="card-body d-flex flex-column"><h5 class="card-title">' + p.title + '</h5><p class="text-secondary mt-auto border-top pt-2">' + p.description + '<br>$' + p.price + '</p><button class="btn btn-success ml-auto">Add to Cart<i class="fa fa-shopping-cart ml-2"></i></button></div></div></div>'
+			html += '<div class="col-lg-4 px-2 mt-3"><div class="card h-100"><img class="w-100" src="' + p.img + '"><i class="fa fa-edit border" class="btn btn-primary" onclick="openModal(' + p.id + ')"></i><div class="card-body d-flex flex-column"><h5 class="card-title">' + p.title + '</h5><p class="text-secondary mt-auto border-top pt-2">' + p.description + '<br>$' + p.price + '</p><button class="btn btn-success ml-auto">Add to Cart<i class="fa fa-shopping-cart ml-2"></i></button></div></div></div>'
 		});
 		
 		// if admin condition
@@ -82,6 +82,7 @@ function openModal(id) {
 	let modalTitle = "Add New Product";
 	currProductId = null;
 	$(".modal-body .alert").hide();
+	$(".modal-footer .btn-danger").hide();
 	
 	if (id) {
 		modalTitle = "Edit Product";
@@ -91,6 +92,7 @@ function openModal(id) {
 		$("#img").val(product.img);
 		$("#price").val(product.price);
 		currProductId = product.id;
+		$(".modal-footer .btn-danger").show();
 	}
 	
 	$("#productModal .modal-title").text(modalTitle);

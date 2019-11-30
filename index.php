@@ -24,7 +24,7 @@
 					<img src="https://c.static-nike.com/a/images/f_auto/w_1920,c_limit/a3f685b9-d275-4aea-93bc-0830d6bd7b02/1129-homepage-apla-xa-in-my-ph.jpg" class="d-block w-100">
 				</div>
 				<div class="carousel-item">
-					<img src="./output.jpg" class="d-block w-100">
+					<img src="./assets/images/output.jpg" class="d-block w-100">
 				</div>
 				<div class="carousel-item">
 					<img src="https://c.static-nike.com/a/images/f_auto/w_1920,c_limit/3fa140d6-dcc4-4a8b-8ac3-5421c1c1a4f5/nikecom-homepage-na.jpg" class="d-block w-100">
