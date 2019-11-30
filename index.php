@@ -16,6 +16,7 @@
 		<a class="navbar-brand d-flex align-items-center" href="#">
 			<img src="https://s3.nikecdn.com/unite/app/651/images/swoosh_black.png" class="d-inline-block align-top" alt="">
 		</a>
+		<a href="/login.php" id="login" class="text-dark"><span>Login</span><span class="fa fa-user ml-2"></span></a>
 	</nav>
 	<div>
 		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">

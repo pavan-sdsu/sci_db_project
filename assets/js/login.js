@@ -1,3 +1,5 @@
+localStorage.removeItem("user");
+
 $("form").submit((e) => {
 	e.preventDefault();
 	const formArr = $("form").serializeArray();
