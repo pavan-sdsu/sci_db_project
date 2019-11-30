@@ -14,7 +14,7 @@ $("form").submit((e) => {
 		success: (response) => {
 			if (response.success == 0) return alert("Invalid credentials");
 			localStorage.setItem("user", JSON.stringify(response.data));
-			window.location.href = "/index";
+			window.location.href = "/";
 		}
 	})
 	
