@@ -7,14 +7,14 @@ $("form").submit((e) => {
 	formArr.forEach(el => values[el.name] = el.value);
 
 	$.ajax({
-		url: "./server/login",
+		url: "./server/login.php",
 		contentType: "application/json",
 		method: "POST",
 		data: JSON.stringify(values),
 		success: (response) => {
 			if (response.success == 0) return alert("Invalid credentials");
 			localStorage.setItem("user", JSON.stringify(response.data));
-			window.location.href = "/";
+			window.location.href = "/index.php";
 		}
 	})
 	
