@@ -27,7 +27,7 @@ const editProduct = (e) => {
 
 	if (currProductId) {
 		$.ajax({
-			url: "./server/update.php",
+			url: "./server/update",
 			contentType: "application/json",
 			method: "POST",
 			data: JSON.stringify({
@@ -41,7 +41,7 @@ const editProduct = (e) => {
 		})
 	} else {
 		$.ajax({
-			url: "./server/insert.php",
+			url: "./server/insert",
 			contentType: "application/json",
 			method: "POST",
 			data: JSON.stringify([values]),
@@ -55,7 +55,7 @@ const editProduct = (e) => {
 }
 
 const getProducts = () => $.ajax({
-	url: "./server/products.php",
+	url: "./server/products",
 	contentType: "application/json",
 	method: "GET",
 	success: (prods) => {
@@ -79,7 +79,7 @@ const getProducts = () => $.ajax({
 const deleteProduct = () => {
 	if (!confirm("You are going to delete a product \nWarning! This cannot be reverted back")) return;
 	$.ajax({
-		url: "./server/delete.php",
+		url: "./server/delete",
 		contentType: "application/json",
 		method: "POST",
 		data: JSON.stringify({ productId: currProductId }),
