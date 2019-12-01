@@ -40,6 +40,7 @@ const editProduct = (e) => {
 			}
 		})
 	} else {
+		values["created_by"] = user.userId
 		$.ajax({
 			url: "./server/insert",
 			contentType: "application/json",
