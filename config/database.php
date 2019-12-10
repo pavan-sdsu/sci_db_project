@@ -3,8 +3,8 @@
 header('Content-Type: application/json');
 
 $servername = "3.218.11.183";
-$username = "root";
-$password = "5DCTCydK";
+$username = "user503";
+$password = "UjU2Y4J3yyjPvSu5";
 $database = "sci_db_project";
 $conn = mysqli_connect($servername, $username, $password, $database);
 
